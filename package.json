@@ -1,0 +1,25 @@
+{
+  "name": "ourluckyconnect",
+  "version": "1.0.0",
+  "description": "Our Language United Community of Kids and Youth Connect. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drPod/OurLuckyConnect.git"
+  },
+  "author": "Darsh Poddar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drPod/OurLuckyConnect/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "body-parser": "^1.19.0",
+    "nodemailer": "^6.6.3",
+    "google-auth-library": "^7.1.0"
+  },
+  "homepage": "https://github.com/drPod/OurLuckyConnect#readme"
+}
