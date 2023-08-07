@@ -33,4 +33,9 @@ function sendEmail() {
 }
 
 // Attach the sendEmail function to the "Send Message" button
-document.getElementById('send-button').addEventListener('click', sendEmail);
+document.getElementById('send-button').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Call the sendEmail function
+    sendEmail();
+});
