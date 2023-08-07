@@ -1,9 +1,3 @@
-// Load environment variables from .env file (assuming you have dotenv configured)
-require('dotenv').config();
-
-// Initialize EmailJS with your public key from the .env file
-emailjs.init(process.env.EMAILJS_PUBLIC_KEY);
-
 // Function to send the email
 function sendEmail() {
     // Gather data from form fields
@@ -20,7 +14,7 @@ function sendEmail() {
         text: `Name: ${name}\nEmail: ${email}\nPhone Number: ${phoneNumber}\nWebsite: ${websiteUrl}\n\nMessage:\n${message}`,
     };
 
-    // Send the email using the service and template IDs from the .env file
+    // Send the email using the service and template IDs
     emailjs.send(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_TEMPLATE_ID, emailData)
         .then((response) => {
             console.log('Email sent:', response);
@@ -33,9 +27,4 @@ function sendEmail() {
 }
 
 // Attach the sendEmail function to the "Send Message" button
-document.getElementById('send-button').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Call the sendEmail function
-    sendEmail();
-});
+document.getElementById('send-button').addEventListener('click', sendEmail);
