@@ -1,30 +1,20 @@
-const nodemailer = require('nodemailer');
-const dotenv = require('dotenv'); // Add this line
+const emailjs = require('emailjs-com');
 
-dotenv.config(); // Load environment variables from .env file
+// Set up EmailJS with your user ID from the .env file
+emailjs.init(process.env.EMAILJS_USER_ID);
 
-// Create a transporter using the default SMTP transport
-const transporter = nodemailer.createTransport({
-    service: 'Gmail', // Use the email provider's name or set up your own SMTP configuration
-    auth: {
-        user: process.env.EMAIL_USERNAME, // Use environment variable
-        pass: process.env.EMAIL_PASSWORD, // Use environment variable
-    },
-});
-
-// Email content
-const mailOptions = {
-    from: process.env.EMAIL_USERNAME, // Sender's email address
-    to: 'recipient@example.com', // Recipient's email address
-    subject: 'Test Email from Nodemailer',
-    text: 'Hello, this is a test email sent using Nodemailer!',
+// Email content using environment variables from the .env file
+const emailData = {
+    to: process.env.EMAIL_TO,
+    subject: process.env.EMAIL_SUBJECT,
+    text: process.env.EMAIL_TEXT,
 };
 
-// Send email
-transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
+// Send the email using the service and template IDs from the .env file
+emailjs.send(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_TEMPLATE_ID, emailData)
+    .then((response) => {
+        console.log('Email sent:', response);
+    })
+    .catch((error) => {
         console.error('Error sending email:', error);
-    } else {
-        console.log('Email sent:', info.response);
-    }
-});
+    });
