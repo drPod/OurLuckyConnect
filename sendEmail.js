@@ -4,7 +4,7 @@ require('dotenv').config();
 // Attach the sendEmail function to the "Send Message" button
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS with your public key from the .env file
-    emailjs.init(process.env.EMAILJS_PUBLIC_KEY);
+    emailjs.init(process.env.d0fCHb2sy9viAuGSR);
 
     // Function to send the email
     function sendEmail() {
