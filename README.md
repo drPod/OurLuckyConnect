@@ -1,4 +1,4 @@
-# Our Lucky Connect - Bridging Language Barriers through Cultural Exchange
+# Our Lucky Connect
 
 ![Our Lucky Connect Logo](https://scontent-dfw5-2.cdninstagram.com/v/t51.2885-19/348147091_192795630321746_5964547564914283836_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-dfw5-2.cdninstagram.com&_nc_cat=102&_nc_ohc=MOzMKoyzajYAX-Xo4Aq&edm=ACWDqb8BAAAA&ccb=7-5&oh=00_AfDFiz4TR8abD-1_ug6UGw36zXOuozr_Gltc3Z84yF_YkA&oe=64D60A5B&_nc_sid=ee9879)
 
