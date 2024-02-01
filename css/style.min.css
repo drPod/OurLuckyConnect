@@ -116,9 +116,19 @@ section {
     right: 0;
     background: #fece6c;
     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: -webkit-linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .jumbotron h1 {
     line-height: .9;
@@ -146,10 +156,21 @@ section {
     left: 0;
     right: 0;
     background: #fece6c;
+
     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: -webkit-linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
   .overlay.bg-white {
     color: #000; }
@@ -728,10 +749,21 @@ section {
     height: auto;
     width: 100%;
     background: #fece6c;
+
     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: -webkit-linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     z-index: 11; }
   #header-navbar {
@@ -740,9 +772,19 @@ section {
   .navbar-transparent .navbar-collapse {
     background: #fece6c;
     /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #333399, #333399);
+
+    /* was previously:
     background: -webkit-linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #333399, #333399);
+
+    /*was previously:
     background: linear-gradient(to right, #333399, #fece6c);
+    */
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px; } }
 
